@@ -11,6 +11,8 @@
 // ==/UserScript==
 
 function miniMapInit() {
+	var $ = window.jQuery;
+	
 	// minimap dom
 	if ($('#mini-map-wrapper').length === 0){
 	var wrapper = $('<div>').attr('id', 'mini-map-wrapper').css({
