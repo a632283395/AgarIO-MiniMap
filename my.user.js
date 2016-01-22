@@ -33,7 +33,7 @@
                 false
             );
             ctx.closePath();
-            ctx.fillStyle = token.color;
+            ctx.fillStyle = 'green';
             ctx.fill();
 	}
 	
