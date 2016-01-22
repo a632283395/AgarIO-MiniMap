@@ -251,8 +251,8 @@ window.msgpack = this.msgpack;
 		if ($('#mini-map-wrapper').length === 0) {
 			var wrapper = $('<div>').attr('id', 'mini-map-wrapper').css({
 				position: 'fixed',
-				bottom: 30,
-				right: 30,
+				bottom: 10,
+				right: 10,
 				width: 300,
 				height: 300,
 				background: 'rgba(128, 128, 128, 0.58)'
