@@ -10,8 +10,9 @@
 // @run-at       document-body
 // ==/UserScript==
 
-// minimap dom
-if ($('#mini-map-wrapper').length === 0){
+function miniMapInit() {
+	// minimap dom
+	if ($('#mini-map-wrapper').length === 0){
 	var wrapper = $('<div>').attr('id', 'mini-map-wrapper').css({
 		position: 'fixed',
 		bottom: 50,
@@ -35,3 +36,7 @@ if ($('#mini-map-wrapper').length === 0){
 
 	window.mini_map = mini_map[0];
 }
+
+$(window.document).ready(function() {
+	miniMapInit();
+});
